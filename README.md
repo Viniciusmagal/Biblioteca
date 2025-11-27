@@ -112,7 +112,7 @@ npm install
 npm run dev
 A aplicação estará disponível em http://localhost:5173
 
-##👨‍💻 Autores
+#👨‍💻 Autores
 Projeto desenvolvido com 💜 por estudantes do IFSP.
 <table>
   <tr>
