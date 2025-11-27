@@ -116,36 +116,32 @@ A aplicação estará disponível em http://localhost:5173
 
 Projeto desenvolvido com 💜 por estudantes do IFSP.
 
+## 👨‍💻 Autores
+
+Projeto desenvolvido com 💜 por estudantes do IFSP.
+
 <table align="center">
   <tr>
-     <td align="center" style="padding: 15px;">
-      <img src="https://avatars.githubusercontent.com/Thiagolvc" width="80" style="border-radius: 50%;"/><br>
-      <b>Geisiele Oliveira</b><br>
-      <a href=https://github.com/GeisieleOliveira" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/155771396?v=4"/>
-      </a>
-    </td>
-      <td align="center" style="padding: 15px;">
-      <img src="https://avatars.githubusercontent.com/Thiagolvc" width="80" style="border-radius: 50%;"/><br>
-      <b>Thiago Oliveira Camargo</b><br>
-      <a href="https://github.com/Thiagolvc" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-Thiagolvc-black?style=for-the-badge&logo=github"/>
-      </a>
-    </td>
-    <td align="center" style="padding: 15px;">
-      <img src="https://avatars.githubusercontent.com/vinolass" width="80" style="border-radius: 50%;"/><br>
-      <b>Vinicius Arantes</b><br>
-      <a href="https://github.com/vinolass" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-vinolass-black?style=for-the-badge&logo=github"/>
-      </a>
-    </td>
-     <td align="center" style="padding: 15px;">
-      <img src="https://avatars.githubusercontent.com/Viniciusmagal" width="80" style="border-radius: 50%;"/><br>
+    <td align="center" width="200px">
+      <img src="https://avatars.githubusercontent.com/u/114201114?v=4" width="100" height="100" style="border-radius:50%; object-fit:cover;"/><br>
       <b>Vinícius Magalhães</b><br>
       <a href="https://github.com/Viniciusmagal" target="_blank">
         <img src="https://img.shields.io/badge/GitHub-Viniciusmagal-black?style=for-the-badge&logo=github"/>
       </a>
     </td>
-    
+    <td align="center" width="200px">
+      <img src="https://avatars.githubusercontent.com/Thiagolvc" width="100" height="100" style="border-radius:50%; object-fit:cover;"/><br>
+      <b>Thiago</b><br>
+      <a href="https://github.com/Thiagolvc" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-Thiagolvc-black?style=for-the-badge&logo=github"/>
+      </a>
+    </td>
+    <td align="center" width="200px">
+      <img src="https://avatars.githubusercontent.com/vinolass" width="100" height="100" style="border-radius:50%; object-fit:cover;"/><br>
+      <b>Vinolass</b><br>
+      <a href="https://github.com/vinolass" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-vinolass-black?style=for-the-badge&logo=github"/>
+      </a>
+    </td>
   </tr>
 </table>
