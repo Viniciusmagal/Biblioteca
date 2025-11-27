@@ -76,6 +76,8 @@ VenezArt/
 │   │   └── services/
 └── README.md
 ```
+
+---
 ##🔧 Instalação e Execução
 Pré-requisitos: Node.js e Python instalados.
 
