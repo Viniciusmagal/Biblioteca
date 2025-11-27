@@ -83,3 +83,97 @@ VenezArt/
 │   │   ├── pages/         # Páginas da Aplicação
 │   │   └── services/      # Integração com API (Axios/Fetch)
 └── README.md
+---
+Aqui está o restante do código para você copiar e colar. Ele continua exatamente de onde você parou:
+
+Markdown
+
+## 📂 Estrutura do Projeto
+
+```bash
+VenezArt/
+├── backend/
+│   ├── app.py             # Ponto de entrada da API
+│   ├── models/            # Modelos do Banco de Dados
+│   ├── routes/            # Rotas da API
+│   └── services/          # Lógica de geração de arquivos
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # Componentes Reutilizáveis
+│   │   ├── pages/         # Páginas da Aplicação
+│   │   └── services/      # Integração com API (Axios/Fetch)
+└── README.md
+🔧 Instalação e Execução
+Pré-requisitos: Node.js e Python instalados.
+
+1️⃣ Configurando o Backend (Servidor)
+# Entre na pasta do backend
+cd backend
+
+# Crie o ambiente virtual
+python -m venv venv
+
+# Ative o ambiente virtual
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute a aplicação
+python app.py
+O servidor iniciará em http://localhost:5000
+2️⃣ Configurando o Frontend (Cliente)
+# Em um novo terminal, entre na pasta do frontend
+cd frontend
+
+# Instale as dependências do Node
+npm install
+
+# Inicie o projeto
+npm run dev
+A aplicação estará disponível em http://localhost:5173
+
+Aqui está o restante do código para você copiar e colar. Ele continua exatamente de onde você parou:Markdown## 📂 Estrutura do Projeto
+
+```bash
+VenezArt/
+├── backend/
+│   ├── app.py             # Ponto de entrada da API
+│   ├── models/            # Modelos do Banco de Dados
+│   ├── routes/            # Rotas da API
+│   └── services/          # Lógica de geração de arquivos
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # Componentes Reutilizáveis
+│   │   ├── pages/         # Páginas da Aplicação
+│   │   └── services/      # Integração com API (Axios/Fetch)
+└── README.md
+🔧 Instalação e ExecuçãoPré-requisitos: Node.js e Python instalados.1️⃣ Configurando o Backend (Servidor)Bash# Entre na pasta do backend
+cd backend
+
+# Crie o ambiente virtual
+python -m venv venv
+
+# Ative o ambiente virtual
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute a aplicação
+python app.py
+O servidor iniciará em http://localhost:50002️⃣ Configurando o Frontend (Cliente)Bash# Em um novo terminal, entre na pasta do frontend
+cd frontend
+
+# Instale as dependências do Node
+npm install
+
+# Inicie o projeto
+npm run dev
+A aplicação estará disponível em http://localhost:5173👨‍💻 AutoresProjeto desenvolvido com 💜 por estudantes do IFSP.<img src="https://github.com/GeisieleOliveira.png" width="100px;"/><br /><sub><b>Geisiele Oliveira</b></sub><img src="https://github.com/Thiagolvc.png" width="100px;"/><br /><sub><b>Thiago Oliveira</b></sub><img src="https://github.com/Viniciusmagal.png" width="100px;"/><br /><sub><b>Vinícius Magalhães</b></sub>
