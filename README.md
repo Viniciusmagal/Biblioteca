@@ -4,28 +4,15 @@
 ![Flask](https://img.shields.io/badge/Backend-Flask-black?style=for-the-badge&logo=flask)
 ![Vite](https://img.shields.io/badge/Bundler-Vite-purple?style=for-the-badge&logo=vite)
 ![SQLite](https://img.shields.io/badge/Database-SQLite-blue?style=for-the-badge&logo=sqlite)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge)
-
----
-
-## 📑 Sumário
-
-- [Descrição](#descrição)
-- [Funcionalidades](#funcionalidades)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Arquitetura](#arquitetura)
-- [Instruções](#instruções)
-- [Desenvolvedores](#desenvolvedores)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge&logo=jwt)
 
 ---
 
 ## 📌 Descrição
 
-O **VenezArt** é um sistema web desenvolvido para funcionar como uma **loja virtual de materiais artísticos**, com foco em itens para pintura em tela.
+O **VenezArt** é uma loja virtual de materiais artísticos, com foco em produtos para pintura em tela.
 
 O projeto foi desenvolvido como parte do Projeto Semestral do curso de **Análise e Desenvolvimento de Sistemas – IFSP**, utilizando uma arquitetura moderna e tecnologias atuais.
-
-A aplicação permite que clientes realizem compras de forma simples e rápida, enquanto o administrador possui recursos avançados de gerenciamento.
 
 ---
 
@@ -40,8 +27,8 @@ A aplicação permite que clientes realizem compras de forma simples e rápida, 
 - Histórico de compras
 
 ### 🔧 Administrador
-- Cadastro, edição e exclusão de produtos
-- Visualização de pedidos
+- Cadastro, edição e exclusão de produtos (CRUD)
+- Visualização e gerenciamento de pedidos
 - Gerenciamento de usuários
 - Exportação de relatórios em PDF e Excel
 
@@ -50,26 +37,26 @@ A aplicação permite que clientes realizem compras de forma simples e rápida, 
 ## 🧠 Tecnologias Utilizadas
 
 ### 🎨 Frontend
-- **React**
-- **Vite**
+- React
+- Vite
 - JavaScript (ES2024)
 - HTML5 e CSS3
 
 ### 🐍 Backend
-- **Python**
-- **Flask**
+- Python
+- Flask
 - Flask-JWT-Extended
 - Werkzeug Security
 
 ### 🗄 Banco de Dados
-- **SQLite**
+- SQLite
 
 ### 🔗 ORM
-- **SQLAlchemy**
+- SQLAlchemy
 
 ### 📄 Geração de Arquivos
-- **ReportLab** (PDF)
-- **openpyxl** + **pandas** (Excel)
+- ReportLab (PDF)
+- openpyxl + pandas (Excel)
 
 ---
 
@@ -77,9 +64,9 @@ A aplicação permite que clientes realizem compras de forma simples e rápida, 
 
 O sistema segue o modelo **Cliente–Servidor**, onde:
 
-- O frontend em React consome a API REST do Flask.
-- O backend gerencia regras de negócio e autenticação.
-- O banco de dados SQLite armazena as informações.
+- O frontend em React consome a API REST desenvolvida em Flask.
+- O backend em Flask lida com regras de negócio, autenticação e geração de arquivos.
+- O banco de dados SQLite armazena usuários, produtos e pedidos.
 
 ---
 
@@ -87,48 +74,42 @@ O sistema segue o modelo **Cliente–Servidor**, onde:
 
 ### 🔧 Configuração do Backend
 
-```bash
-cd backend
-python -m venv venv
+    cd backend
+    python -m venv venv
 
-# Windows
-venv\Scripts\activate
+    # Ativar ambiente virtual (Windows)
+    venv\Scripts\activate
 
-# Linux/Mac
-source venv/bin/activate
+    # Ativar ambiente virtual (Linux/Mac)
+    source venv/bin/activate
 
-pip install -r requirements.txt
-python app.py
-```
+    pip install -r requirements.txt
+    python app.py
+
+A API Flask estará em:
+
+    http://localhost:5000
+
+---
 
 ### 🌐 Configuração do Frontend
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+    cd frontend
+    npm install
+    npm run dev
 
-A aplicação estará disponível em:
-```
-http://localhost:5173
-```
+A aplicação React estará disponível em:
 
-A API Flask roda em:
-```
-http://localhost:5000
-```
+    http://localhost:5173
 
 ---
 
 ## 👨‍💻 Desenvolvedores
 
-| Nome | Prontuário |
-|------|------------|
-| Geisiele de Oliveira | BP3053563 |
-| Thiago Oliveira | BP3053636 |
-| Vinicius Arantes | BP3053709 |
-| **Vinícius Magalhães** | **BP3054365** |
+[![Geisiele Oliveira](https://img.shields.io/badge/GitHub-GeisieleOliveira-black?style=for-the-badge&logo=github)](https://github.com/GeisieleOliveira)
+[![Thiago Oliveira Cmargo](https://img.shields.io/badge/GitHub-Thiagolvc-black?style=for-the-badge&logo=github)](https://github.com/Thiagolvc)
+
+[![Vinícius Magalhães](https://img.shields.io/badge/GitHub-Viniciusmagal-black?style=for-the-badge&logo=github)](https://github.com/Viniciusmagal)
 
 ---
 
