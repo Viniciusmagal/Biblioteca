@@ -42,23 +42,44 @@ O projeto foi desenvolvido como parte do **Projeto Semestral do curso de Anális
 ---
 
 ## 🛠 Tecnologias
+🛠 Tecnologias Utilizadas no Projeto
 
-### Frontend
-- React + Vite
-- JavaScript (ES2024)
-- CSS3
+Este projeto foi desenvolvido integrando três pilares principais: Frontend com React + Vite, Backend com Python e Flask, e Banco de Dados SQLite.
+A seguir, apresentamos um resumo organizado das ferramentas utilizadas e seus papéis dentro da aplicação.
 
-### Backend
-- Flask (Python)
-- Flask-JWT-Extended
-- SQLAlchemy
-- ReportLab (PDF)
-- Pandas / OpenPyXL (Excel)
+🎨 Frontend — React + Vite
 
-### Banco de Dados
-- SQLite
+O frontend da aplicação foi construído utilizando React aliado ao Vite, que oferece um ambiente de desenvolvimento moderno, rápido e eficiente.
 
----
+💡 Por que React?
+
+Permite criar interfaces dinâmicas e componentes reutilizáveis.
+
+Facilita a organização do código com componentes separados.
+
+Sincroniza facilmente com a API Flask através de requisições HTTP.
+
+⚡ Por que Vite?
+
+Tem um servidor de desenvolvimento extremamente rápido.
+
+Build mais leve e otimizado.
+
+Melhor experiência com Hot Module Replacement (atualização automática sem recarregar a página).
+
+🔧 Funcionalidades implementadas no frontend
+
+Páginas e componentes do usuário e administrador
+
+Listagem de produtos
+
+Carrinho de compras
+
+Sistema de login e cadastro
+
+Área administrativa com gerenciamento de pedidos
+
+Consumo da API Flask u
 
 ## 📂 Estrutura do Projeto
 
