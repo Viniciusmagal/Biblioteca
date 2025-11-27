@@ -1,128 +1,233 @@
-🛠 Tecnologias Utilizadas no Projeto
+🎨🛍️ VenezArt – Plataforma de E-commerce de Materiais Artísticos
 
-Este projeto foi desenvolvido integrando três pilares principais: Frontend com React + Vite, Backend com Python e Flask, e Banco de Dados SQLite.
-A seguir, apresentamos um resumo organizado das ferramentas utilizadas e seus papéis dentro da aplicação.
+React + Vite | Flask | SQLite | SQLAlchemy | JWT | PDF & Excel Generator
 
-🎨 Frontend — React + Vite
+📌 Visão Geral
 
-O frontend da aplicação foi construído utilizando React aliado ao Vite, que oferece um ambiente de desenvolvimento moderno, rápido e eficiente.
+O VenezArt é uma aplicação full stack desenvolvida como projeto semestral do curso de Análise e Desenvolvimento de Sistemas – IFSP Bragança Paulista.
+O sistema simula uma loja virtual especializada em materiais artísticos, oferecendo ferramentas completas para:
+
+Clientes comprarem produtos com praticidade
+
+Administradores gerenciarem catálogo e pedidos
+
+Geração automática de PDFs e planilhas
+
+Autenticação segura
+
+Fluxo completo do carrinho à finalização da compra
+
+O projeto integra tecnologias modernas, rápidas e confiáveis para entregar uma experiência fluida tanto no cliente quanto no servidor.
+
+🛠️ Tecnologias Utilizadas no Projeto
+
+O sistema foi desenvolvido com três camadas principais:
+Frontend com React + Vite, Backend com Python + Flask, e Banco de Dados SQLite com ORM SQLAlchemy.
+
+🎨 Frontend – React + Vite
+
+O frontend foi construído com React, utilizando o Vite como bundler para garantir desempenho superior no desenvolvimento e build.
 
 💡 Por que React?
 
-Permite criar interfaces dinâmicas e componentes reutilizáveis.
+Componentização limpa e reutilizável
 
-Facilita a organização do código com componentes separados.
+Estado sincronizado em tempo real
 
-Sincroniza facilmente com a API Flask através de requisições HTTP.
+Fácil integração com API REST Flask
+
+Ideal para aplicações dinâmicas e interativas
 
 ⚡ Por que Vite?
 
-Tem um servidor de desenvolvimento extremamente rápido.
+Build extremamente rápido
 
-Build mais leve e otimizado.
+HMR (Hot Module Replacement) instantâneo
 
-Melhor experiência com Hot Module Replacement (atualização automática sem recarregar a página).
+Menos consumo de recursos
 
-🔧 Funcionalidades implementadas no frontend
+Ambiente moderno e otimizado
 
-Páginas e componentes do usuário e administrador
+🔧 Funcionalidades Implementadas no Frontend
+
+Interface completa do cliente e administrador
 
 Listagem de produtos
 
-Carrinho de compras
+Carrinho (add, remove, update)
 
-Sistema de login e cadastro
+Login e cadastro conectados ao backend
 
-Área administrativa com gerenciamento de pedidos
+Tela de pedidos + histórico
 
-Consumo da API Flask utilizando fetch ou axios (dependendo do seu projeto)
+Área administrativa (CRUD completo)
 
-Interface responsiva e atualizações em tempo real através do estado do React
+Consumo de API via fetch ou axios
 
-🐍 Linguagem Python + Flask (Backend)
+Layout responsivo e atualizado pelo estado global
 
-O backend da aplicação foi desenvolvido em Python, escolhida por ser uma linguagem simples, poderosa e com um ecossistema robusto.
-O framework principal utilizado foi o Flask, que permitiu criar a API de forma leve, organizada e eficiente.
+🐍 Backend — Python + Flask
 
-🔧 Recursos do Flask utilizados
+O backend utiliza Flask, garantindo leveza, segurança e flexibilidade na construção da API.
+Python foi escolhido pela clareza da linguagem e pela força de seu ecossistema.
 
-Roteamento da API
-Responsável por gerenciar todas as rotas da aplicação: login, produtos, pedidos, carrinho, favoritos etc.
+🔧 Recursos do Flask Utilizados
+🔀 Roteamento da API
 
-request
-Usado para capturar dados enviados do frontend.
+Gerencia endpoints como:
 
-jsonify
-Converte as respostas da API em JSON.
+/api/login
 
-session
-Guarda informações temporárias do usuário quando necessário.
+/api/usuarios
 
-send_file
-Envia arquivos gerados dinamicamente (PDF e Excel).
+/api/produtos
 
-🔐 Autenticação
+/api/carrinho
 
-Utilizando Flask-JWT-Extended:
+/api/pedidos
 
-create_access_token – Gera tokens JWT.
+/api/favoritos
 
-jwt_required – Protege rotas.
+📥 request
 
-get_jwt_identity – Identifica o usuário logado.
+Recebe dados enviados pelo frontend.
 
-🔑 Segurança de senhas
+📤 jsonify
+
+Retorna respostas estruturadas em JSON para o React.
+
+🔐 Autenticação JWT
+
+Com Flask-JWT-Extended:
+
+create_access_token() – gera tokens
+
+jwt_required() – protege rotas sensíveis
+
+get_jwt_identity() – identifica usuário logado
+
+🔑 Segurança de Senhas
 
 Usando Werkzeug Security:
 
-generate_password_hash – Cria hash seguro para senha.
+generate_password_hash() — cria hash seguro
 
-check_password_hash – Valida a senha no login.
+check_password_hash() — valida senha no login
 
-📄 Geração de arquivos (PDF e Excel)
+📄 Geração de Arquivos — PDF e Excel
 
-ReportLab — responsável pela criação de PDFs (tabelas, estilização, layout).
+A aplicação conta com geração automática de arquivos:
 
-openpyxl + pandas — usados para gerar planilhas Excel, especialmente para o administrador.
+📘 PDF – via ReportLab
 
-BytesIO — permite gerar os arquivos em memória, sem salvar no disco.
+Utilizado para gerar:
 
-📘 Outras bibliotecas úteis
+Comprovantes de pedido
 
-datetime — manipulação de datas (ex.: data do pedido).
+Relatórios administrativos
 
-re — validações com expressões regulares.
+Documentos com tabelas, títulos e formatação personalizada
 
-os e requests — manipulação de arquivos e comunicação externa.
+📊 Excel – via openpyxl + pandas
 
-pytz — gerenciamento de fuso horário.
+Usado para:
 
-🗄 Banco de Dados — SQLite
+Exportação de pedidos
 
-Para armazenar dados, foi utilizado o SQLite, um banco de dados leve e simples que não exige servidor externo, ideal para aplicações pequenas e médias.
+Relatórios da área administrativa
+
+🧠 BytesIO
+
+Permite criar PDFs e planilhas sem salvar no disco, enviando diretamente para o usuário.
+
+🗄 Banco de Dados — SQLite + SQLAlchemy (ORM)
+
+O projeto utiliza SQLite pela simplicidade e desempenho em projetos pequenos/médios.
+O ORM SQLAlchemy permite trabalhar com tabelas usando classes Python.
 
 ✔ Por que SQLite?
 
-Não precisa de instalação de servidor.
+Sem necessidade de servidor
 
-Perfeito para desenvolvimento local e projetos simples.
+Ideal para desenvolvimento local
 
-Integrado facilmente ao SQLAlchemy.
+Estável, rápido e confiável
 
-🧱 Modelos do Banco (ORM)
+Integração perfeita com SQLAlchemy
 
-Utilizando SQLAlchemy, os principais modelos criados foram:
+🧱 Modelos Principais
+👤 User
 
-User — usuários da aplicação
+id, nome, email, senha hash
 
-Product — produtos cadastrados
+perfil (cliente/admin)
 
-CartItem — itens no carrinho
+🎨 Product
 
-Pedido — pedidos realizados
+nome, descrição, preço, estoque, imagem
 
-PedidoItem — itens dentro de cada pedido
+🛒 CartItem
 
-Favorite — produtos favoritados
+itens no carrinho, armazenados por usuário
 
-Esses modelos representam as tabelas do banco e permitem executar operações de forma prática e segura.
+📦 Pedido
+
+dados do pedido + data
+
+📦➡️🖼 PedidoItem
+
+itens pertencentes a cada pedido
+
+⭐ Favorite
+
+lista de favoritos de cada cliente
+
+Esses modelos garantem integridade e facilitam operações CRUD.
+
+🔌 Integração Frontend + Backend
+
+O React se comunica com Flask via API RESTful, com as seguintes características:
+
+Padrão JSON
+
+Rotas protegidas com JWT
+
+Sessões persistentes
+
+Controle de erros refinado
+
+Organização limpa por controladores
+
+🎯 Objetivos do Sistema
+
+Organizar catálogo de produtos
+
+Criar fluxo completo de compra
+
+Gerenciar usuários
+
+Controlar pedidos e gerar comprovantes
+
+Entregar uma plataforma robusta e intuitiva
+
+Aplicar conceitos de análise orientada a objetos
+
+Estruturar uma solução completa do zero
+
+📌 Status do Projeto
+
+✔ Back-end funcional
+✔ Front-end integrado
+✔ Login + JWT implementado
+✔ CRUD administrativo completo
+✔ Carrinho funcional
+✔ PDF e Excel funcionando
+✔ Banco de dados operante
+✔ Layout responsivo
+
+🧑‍💻 Desenvolvedores
+Nome	Prontuário
+Geisiele de Oliveira	BP3053563
+Thiago Oliveira	BP3053636
+Vinicius Arantes	BP3053709
+Vinícius Magalhães	BP3054365
