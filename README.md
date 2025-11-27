@@ -118,6 +118,13 @@ Projeto desenvolvido com 💜 por estudantes do IFSP.
 
 <table align="center">
   <tr>
+     <td align="center" style="padding: 15px;">
+      <img src="https://avatars.githubusercontent.com/Thiagolvc" width="80" style="border-radius: 50%;"/><br>
+      <b>Geisiele Oliveira</b><br>
+      <a href=https://github.com/GeisieleOliveira" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/155771396?v=4"/>
+      </a>
+    </td>
       <td align="center" style="padding: 15px;">
       <img src="https://avatars.githubusercontent.com/Thiagolvc" width="80" style="border-radius: 50%;"/><br>
       <b>Thiago Oliveira Camargo</b><br>
