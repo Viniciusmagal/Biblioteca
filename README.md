@@ -191,7 +191,7 @@ VenezArt/
 ```
 
 ---
-##🔧 Instalação e Execução
+## 🔧 Instalação e Execução
 Pré-requisitos: Node.js e Python instalados.
 
 1️⃣ Configurando o Backend (Servidor)
