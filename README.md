@@ -102,3 +102,11 @@ python app.py
 O servidor iniciará em http://localhost:5000
 
 2️⃣ Configurando o Frontend (Cliente)
+# Em um novo terminal, entre na pasta do frontend
+cd frontend
+
+# Instale as dependências do Node
+npm install
+
+# Inicie o projeto
+npm run dev
