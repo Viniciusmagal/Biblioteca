@@ -42,133 +42,16 @@ O projeto foi desenvolvido como parte do **Projeto Semestral do curso de Anális
 ---
 
 ## 🛠 Tecnologias
-🛠 Tecnologias Utilizadas no Projeto
+## 🛠 Tecnologias Utilizadas no Projeto
 
+---
 
-Este projeto foi desenvolvido integrando três pilares principais: Frontend com React + Vite, Backend com Python e Flask, e Banco de Dados SQLite.
-A seguir, apresentamos um resumo organizado das ferramentas utilizadas e seus papéis dentro da aplicação.
-
-🎨 Frontend — React + Vite
-
-O frontend da aplicação foi construído utilizando React aliado ao Vite, que oferece um ambiente de desenvolvimento moderno, rápido e eficiente.
-
-💡 Por que React?
-
-Permite criar interfaces dinâmicas e componentes reutilizáveis.
-
-Facilita a organização do código com componentes separados.
-
-Sincroniza facilmente com a API Flask através de requisições HTTP.
-
-⚡ Por que Vite?
-
-Tem um servidor de desenvolvimento extremamente rápido.
-
-Build mais leve e otimizado.
-
-Melhor experiência com Hot Module Replacement (atualização automática sem recarregar a página).
-
-🔧 Funcionalidades implementadas no frontend
-
-Páginas e componentes do usuário e administrador
-
-Listagem de produtos
-
-Carrinho de compras
-
-Sistema de login e cadastro
-
-Área administrativa com gerenciamento de pedidos
-
-Consumo da API Flask utilizando fetch ou axios (dependendo do seu projeto)
-
-Interface responsiva e atualizações em tempo real através do estado do React
-
-🐍 Linguagem Python + Flask (Backend)
-
-O backend da aplicação foi desenvolvido em Python, escolhida por ser uma linguagem simples, poderosa e com um ecossistema robusto.
-O framework principal utilizado foi o Flask, que permitiu criar a API de forma leve, organizada e eficiente.
-
-🔧 Recursos do Flask utilizados
-
-Roteamento da API
-Responsável por gerenciar todas as rotas da aplicação: login, produtos, pedidos, carrinho, favoritos etc.
-
-request
-Usado para capturar dados enviados do frontend.
-
-jsonify
-Converte as respostas da API em JSON.
-
-session
-Guarda informações temporárias do usuário quando necessário.
-
-send_file
-Envia arquivos gerados dinamicamente (PDF e Excel).
-
-🔐 Autenticação
-
-Utilizando Flask-JWT-Extended:
-
-create_access_token – Gera tokens JWT.
-
-jwt_required – Protege rotas.
-
-get_jwt_identity – Identifica o usuário logado.
-
-🔑 Segurança de senhas
-
-Usando Werkzeug Security:
-
-generate_password_hash – Cria hash seguro para senha.
-
-check_password_hash – Valida a senha no login.
-
-📄 Geração de arquivos (PDF e Excel)
-
-ReportLab — responsável pela criação de PDFs (tabelas, estilização, layout).
-
-openpyxl + pandas — usados para gerar planilhas Excel, especialmente para o administrador.
-
-BytesIO — permite gerar os arquivos em memória, sem salvar no disco.
-
-📘 Outras bibliotecas úteis
-
-datetime — manipulação de datas (ex.: data do pedido).
-
-re — validações com expressões regulares.
-
-os e requests — manipulação de arquivos e comunicação externa.
-
-pytz — gerenciamento de fuso horário.
-
-🗄 Banco de Dados — SQLite
-
-Para armazenar dados, foi utilizado o SQLite, um banco de dados leve e simples que não exige servidor externo, ideal para aplicações pequenas e médias.
-
-✔ Por que SQLite?
-
-Não precisa de instalação de servidor.
-
-Perfeito para desenvolvimento local e projetos simples.
-
-Integrado facilmente ao SQLAlchemy.
-
-🧱 Modelos do Banco (ORM)
-
-Utilizando SQLAlchemy, os principais modelos criados foram:
-
-User — usuários da aplicação
-
-Product — produtos cadastrados
-
-CartItem — itens no carrinho
-
-Pedido — pedidos realizados
-
-PedidoItem — itens dentro de cada pedido
-
-Favorite — produtos favoritados
+| Tecnologia | Descrição |
+|-----------|-----------|
+| ![React](https://img.shields.io/badge/REACT-20232A?style=for-the-badge&logo=react) | **Frontend — React + Vite**<br><br>O frontend da aplicação foi construído utilizando React aliado ao Vite, que oferece um ambiente de desenvolvimento moderno, rápido e eficiente.<br><br>**Por que React?**<br>• Permite criar interfaces dinâmicas e componentes reutilizáveis.<br>• Facilita a organização do código com componentes separados.<br>• Sincroniza facilmente com a API Flask através de requisições HTTP.<br><br>**Por que Vite?**<br>• Tem um servidor de desenvolvimento extremamente rápido.<br>• Build mais leve e otimizado.<br>• Melhor experiência com Hot Module Replacement (atualização automática sem recarregar a página).<br><br>**Funcionalidades no Frontend:**<br>• Páginas e componentes do usuário e administrador<br>• Listagem de produtos<br>• Carrinho de compras<br>• Sistema de login e cadastro<br>• Área administrativa com gerenciamento de pedidos<br>• Consumo da API Flask utilizando fetch ou axios<br>• Interface responsiva e atualizações em tempo real através do estado do React |
+| ![Python](https://img.shields.io/badge/PYTHON-306998?style=for-the-badge&logo=python&logoColor=white) | **Linguagem Python + Flask (Backend)**<br><br>O backend da aplicação foi desenvolvido em Python, escolhida por ser uma linguagem simples, poderosa e com um ecossistema robusto. O framework principal utilizado foi o Flask, que permitiu criar a API de forma leve, organizada e eficiente.<br><br>**Recursos do Flask utilizados:**<br>• Roteamento da API — responsável por gerenciar todas as rotas da aplicação: login, produtos, pedidos, carrinho, favoritos etc.<br>• request — usado para capturar dados enviados do frontend.<br>• jsonify — converte as respostas da API em JSON.<br>• session — guarda informações temporárias do usuário quando necessário.<br>• send_file — envia arquivos gerados dinamicamente (PDF e Excel).<br><br>**Autenticação (Flask-JWT-Extended):**<br>• create_access_token — gera tokens JWT.<br>• jwt_required — protege rotas.<br>• get_jwt_identity — identifica o usuário logado.<br><br>**Segurança de senhas (Werkzeug):**<br>• generate_password_hash — cria hash seguro para senha.<br>• check_password_hash — valida a senha no login. |
+| ![Flask](https://img.shields.io/badge/FLASK-000000?style=for-the-badge&logo=flask) | **Geração de Arquivos (PDF e Excel)**<br><br>• ReportLab — responsável pela criação de PDFs (tabelas, estilização e layout).<br>• openpyxl + pandas — usados para gerar planilhas Excel, especialmente para o administrador.<br>• BytesIO — permite gerar os arquivos em memória, sem salvar no disco.<br><br>**Outras bibliotecas úteis:**<br>• datetime — manipulação de datas (ex.: data do pedido).<br>• re — validações com expressões regulares.<br>• os e requests — manipulação de arquivos e comunicação externa.<br>• pytz — gerenciamento de fuso horário. |
+| ![SQLite](https://img.shields.io/badge/SQLITE-003B57?style=for-the-badge&logo=sqlite&logoColor=white) | **Banco de Dados — SQLite**<br><br>Para armazenar dados, foi utilizado o SQLite, um banco de dados leve e simples que não exige servidor externo, ideal para aplicações pequenas e médias.<br><br>**Por que SQLite?**<br>• Não precisa de instalação de servidor.<br>• Perfeito para desenvolvimento local e projetos simples.<br>• Integrado facilmente ao SQLAlchemy.<br><br>**Modelos do Banco (ORM):**<br>• User — usuários da aplicação<br>• Product — produtos cadastrados<br>• CartItem — itens no carrinho<br>• Pedido — pedidos realizados<br>• PedidoItem — itens dentro de cada pedido<br>• Favorite — produtos favoritados |
 
 ---
 
