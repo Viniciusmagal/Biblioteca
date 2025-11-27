@@ -1,233 +1,138 @@
-🎨🛍️ VenezArt – Plataforma de E-commerce de Materiais Artísticos
+# 🎨 Projeto VenezArt
 
-React + Vite | Flask | SQLite | SQLAlchemy | JWT | PDF & Excel Generator
+![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)
+![Flask](https://img.shields.io/badge/Backend-Flask-black?style=for-the-badge&logo=flask)
+![Vite](https://img.shields.io/badge/Bundler-Vite-purple?style=for-the-badge&logo=vite)
+![SQLite](https://img.shields.io/badge/Database-SQLite-blue?style=for-the-badge&logo=sqlite)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge)
 
-📌 Visão Geral
+---
 
-O VenezArt é uma aplicação full stack desenvolvida como projeto semestral do curso de Análise e Desenvolvimento de Sistemas – IFSP Bragança Paulista.
-O sistema simula uma loja virtual especializada em materiais artísticos, oferecendo ferramentas completas para:
+## 📑 Sumário
 
-Clientes comprarem produtos com praticidade
+- [Descrição](#descrição)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Arquitetura](#arquitetura)
+- [Instruções](#instruções)
+- [Desenvolvedores](#desenvolvedores)
 
-Administradores gerenciarem catálogo e pedidos
+---
 
-Geração automática de PDFs e planilhas
+## 📌 Descrição
 
-Autenticação segura
+O **VenezArt** é um sistema web desenvolvido para funcionar como uma **loja virtual de materiais artísticos**, com foco em itens para pintura em tela.
 
-Fluxo completo do carrinho à finalização da compra
+O projeto foi desenvolvido como parte do Projeto Semestral do curso de **Análise e Desenvolvimento de Sistemas – IFSP**, utilizando uma arquitetura moderna e tecnologias atuais.
 
-O projeto integra tecnologias modernas, rápidas e confiáveis para entregar uma experiência fluida tanto no cliente quanto no servidor.
+A aplicação permite que clientes realizem compras de forma simples e rápida, enquanto o administrador possui recursos avançados de gerenciamento.
 
-🛠️ Tecnologias Utilizadas no Projeto
+---
 
-O sistema foi desenvolvido com três camadas principais:
-Frontend com React + Vite, Backend com Python + Flask, e Banco de Dados SQLite com ORM SQLAlchemy.
+## 🛠 Funcionalidades
 
-🎨 Frontend – React + Vite
+### 👤 Cliente
+- Navegação no catálogo de produtos
+- Visualização detalhada de itens
+- Adição e remoção de produtos no carrinho
+- Finalização de pedidos
+- Geração automática de comprovante em PDF
+- Histórico de compras
 
-O frontend foi construído com React, utilizando o Vite como bundler para garantir desempenho superior no desenvolvimento e build.
+### 🔧 Administrador
+- Cadastro, edição e exclusão de produtos
+- Visualização de pedidos
+- Gerenciamento de usuários
+- Exportação de relatórios em PDF e Excel
 
-💡 Por que React?
+---
 
-Componentização limpa e reutilizável
+## 🧠 Tecnologias Utilizadas
 
-Estado sincronizado em tempo real
+### 🎨 Frontend
+- **React**
+- **Vite**
+- JavaScript (ES2024)
+- HTML5 e CSS3
 
-Fácil integração com API REST Flask
+### 🐍 Backend
+- **Python**
+- **Flask**
+- Flask-JWT-Extended
+- Werkzeug Security
 
-Ideal para aplicações dinâmicas e interativas
+### 🗄 Banco de Dados
+- **SQLite**
 
-⚡ Por que Vite?
+### 🔗 ORM
+- **SQLAlchemy**
 
-Build extremamente rápido
+### 📄 Geração de Arquivos
+- **ReportLab** (PDF)
+- **openpyxl** + **pandas** (Excel)
 
-HMR (Hot Module Replacement) instantâneo
+---
 
-Menos consumo de recursos
+## 🧱 Arquitetura
 
-Ambiente moderno e otimizado
+O sistema segue o modelo **Cliente–Servidor**, onde:
 
-🔧 Funcionalidades Implementadas no Frontend
+- O frontend em React consome a API REST do Flask.
+- O backend gerencia regras de negócio e autenticação.
+- O banco de dados SQLite armazena as informações.
 
-Interface completa do cliente e administrador
+---
 
-Listagem de produtos
+## ⚙️ Instruções
 
-Carrinho (add, remove, update)
+### 🔧 Configuração do Backend
 
-Login e cadastro conectados ao backend
+```bash
+cd backend
+python -m venv venv
 
-Tela de pedidos + histórico
+# Windows
+venv\Scripts\activate
 
-Área administrativa (CRUD completo)
+# Linux/Mac
+source venv/bin/activate
 
-Consumo de API via fetch ou axios
-
-Layout responsivo e atualizado pelo estado global
-
-🐍 Backend — Python + Flask
-
-O backend utiliza Flask, garantindo leveza, segurança e flexibilidade na construção da API.
-Python foi escolhido pela clareza da linguagem e pela força de seu ecossistema.
-
-🔧 Recursos do Flask Utilizados
-🔀 Roteamento da API
-
-Gerencia endpoints como:
-
-/api/login
-
-/api/usuarios
-
-/api/produtos
-
-/api/carrinho
-
-/api/pedidos
-
-/api/favoritos
-
-📥 request
-
-Recebe dados enviados pelo frontend.
-
-📤 jsonify
-
-Retorna respostas estruturadas em JSON para o React.
-
-🔐 Autenticação JWT
-
-Com Flask-JWT-Extended:
-
-create_access_token() – gera tokens
-
-jwt_required() – protege rotas sensíveis
-
-get_jwt_identity() – identifica usuário logado
-
-🔑 Segurança de Senhas
-
-Usando Werkzeug Security:
-
-generate_password_hash() — cria hash seguro
-
-check_password_hash() — valida senha no login
-
-📄 Geração de Arquivos — PDF e Excel
-
-A aplicação conta com geração automática de arquivos:
-
-📘 PDF – via ReportLab
-
-Utilizado para gerar:
-
-Comprovantes de pedido
-
-Relatórios administrativos
-
-Documentos com tabelas, títulos e formatação personalizada
-
-📊 Excel – via openpyxl + pandas
-
-Usado para:
-
-Exportação de pedidos
-
-Relatórios da área administrativa
-
-🧠 BytesIO
-
-Permite criar PDFs e planilhas sem salvar no disco, enviando diretamente para o usuário.
-
-🗄 Banco de Dados — SQLite + SQLAlchemy (ORM)
-
-O projeto utiliza SQLite pela simplicidade e desempenho em projetos pequenos/médios.
-O ORM SQLAlchemy permite trabalhar com tabelas usando classes Python.
-
-✔ Por que SQLite?
-
-Sem necessidade de servidor
-
-Ideal para desenvolvimento local
-
-Estável, rápido e confiável
-
-Integração perfeita com SQLAlchemy
-
-🧱 Modelos Principais
-👤 User
-
-id, nome, email, senha hash
-
-perfil (cliente/admin)
-
-🎨 Product
-
-nome, descrição, preço, estoque, imagem
-
-🛒 CartItem
-
-itens no carrinho, armazenados por usuário
-
-📦 Pedido
-
-dados do pedido + data
-
-📦➡️🖼 PedidoItem
-
-itens pertencentes a cada pedido
-
-⭐ Favorite
-
-lista de favoritos de cada cliente
-
-Esses modelos garantem integridade e facilitam operações CRUD.
-
-🔌 Integração Frontend + Backend
-
-O React se comunica com Flask via API RESTful, com as seguintes características:
-
-Padrão JSON
-
-Rotas protegidas com JWT
-
-Sessões persistentes
-
-Controle de erros refinado
-
-Organização limpa por controladores
-
-🎯 Objetivos do Sistema
-
-Organizar catálogo de produtos
-
-Criar fluxo completo de compra
-
-Gerenciar usuários
-
-Controlar pedidos e gerar comprovantes
-
-Entregar uma plataforma robusta e intuitiva
-
-Aplicar conceitos de análise orientada a objetos
-
-Estruturar uma solução completa do zero
-
-📌 Status do Projeto
-
-✔ Back-end funcional
-✔ Front-end integrado
-✔ Login + JWT implementado
-✔ CRUD administrativo completo
-✔ Carrinho funcional
-✔ PDF e Excel funcionando
-✔ Banco de dados operante
-✔ Layout responsivo
-
-🧑‍💻 Desenvolvedores
-Nome	Prontuário
-Geisiele de Oliveira	BP3053563
-Thiago Oliveira	BP3053636
-Vinicius Arantes	BP3053709
-Vinícius Magalhães	BP3054365
+pip install -r requirements.txt
+python app.py
+```
+
+### 🌐 Configuração do Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+A aplicação estará disponível em:
+```
+http://localhost:5173
+```
+
+A API Flask roda em:
+```
+http://localhost:5000
+```
+
+---
+
+## 👨‍💻 Desenvolvedores
+
+| Nome | Prontuário |
+|------|------------|
+| Geisiele de Oliveira | BP3053563 |
+| Thiago Oliveira | BP3053636 |
+| Vinicius Arantes | BP3053709 |
+| **Vinícius Magalhães** | **BP3054365** |
+
+---
+
+✔ Projeto desenvolvido para fins acadêmicos  
+✔ Arquitetura moderna  
+✔ Código organizado e modular  
+✔ Fácil manutenção e escalabilidade
