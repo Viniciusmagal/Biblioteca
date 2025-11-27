@@ -100,3 +100,5 @@ pip install -r requirements.txt
 # Execute a aplicação
 python app.py
 O servidor iniciará em http://localhost:5000
+
+2️⃣ Configurando o Frontend (Cliente)
